@@ -18,6 +18,18 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#">Gary Fishell</a></li>
+                <li class="sidebar-nav-item"><a href="#">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#about">About</a></li>
+                <li class="sidebar-nav-item"><a href="#projects">Projects</a></li>
+                <li class="sidebar-nav-item"><a href="#skills">Skills</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
                 <div class="mb-3">
@@ -36,91 +48,180 @@
         <!--About Me-->
         <section class="content-section bg-light" id="about">
             <div class="container px-4 px-lg-5 text-center">
-                <h2>About Me</h2>
+                <div class="content-section-heading text-center">
+                    <h2>About Me</h2>
+                    <h3 class="mb-5">Bachelors of Computer Science Graduate | San Diego State University | Summa Cum Laude | GPA/Major GPA: 3.9/4.0</h3>
+                </div>
                 <div class="lead mb-5">
-                    <p>Hello! My name is Gary and I'm currently a software engineer working at Northrop Grumman. Creating software has been a passion of mine long before forming it into a career. Growing up I was always fascinated by how developers managed to create some of my favorite video-games as a kid. I can still vividly remember asking a high-school friend for his Comp-Sci class material so that I could teach myself Java to create my own games.</p>
+                    <p>Hello! My name is Gary and I'm currently a software engineer for Northrop Grumman. Creating software has been a passion of mine long before forming it into a career. Growing up I was always fascinated by how developers managed to create some of my favorite video-games as a kid. I can still vividly remember asking a high-school friend for his Comp-Sci class material so that I could teach myself Java to create my own games.</p>
                     <p>This passion has transformed into a career of learning how to develop software to solve some serious real-world problems.</p>
                     <p>Through my pursuit in a bachelors degree in Computer Science and my time at Northrop Grumman, I have gained the ability to learn unfamiliar concepts quickly and develop software in an agile environment. I've really learned to enjoy the learning process as it allows me to create and improve on applications in new ways. As I continue my career, I plan to embrace this learning process by continuing to learn new and unfamiliar technologies. </p>
                     <p>Thank you for stopping by to view the work that I'm most proud of and I hope you enjoy :D</p>
                 </div>
                 <a class="btn btn-dark btn-xl mb-4" href="#projects">Projects</a>
-                <h2 class="mb-5">Tech Stacks</h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <img class="img-fluid" src="assets/img/frontend.jpg" alt="Frontend"/>
-                            <div class="col-sm my-3">
-                                <img class="img-fluid" src="assets/img/html5.png" alt="HTML 5"/>
-                                <img class="img-fluid" src="assets/img/css.png" alt="CSS"/>
-                                <img class="img-fluid" src="assets/img/bootstrap.png" alt="Bootstrap"/>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <img class="img-fluid" src="assets/img/backend.jpg" alt="Backend"/>
-                        </div>
-                        <div class="col-sm">
-                            <img class="img-fluid" src="assets/img/tools.jpg" alt="Tools"/>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <!--Projects-->
         <section class="content-section" id="projects">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
+                    <h2 class="mb-5">Projects</h2>
                 </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" target="_blank" rel="noopener noreferrer" href="https://github.com/Kanekiark28/gits">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">GITS - Graffiti Incident Tracking System</div>
-                                    <p class="mb-0 ">A flask framework webapp used to assist law enforcement and city workers in reporting graffiti</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/graffiti-gits.jpg" alt="Graffiti" />
-                        </a>
+                <div>
+                    <div class="container">
+                        <h3>Graffiti Incident Tracker System (GITS)</h3>
+                        <h4 class="subheading">Web Application</h4>
+                        <h4 class="subheading">Skills Used: HTML, CSS, Bootstrap, Javascript, Flask, SQLite, SQLAlchemy, Selenium WebDriver</h4>
+                        <ul>
+                            <li class="list-item-text">Developed a graffiti incident tracking web application which utilizes a RESTful API using the Flask framework</li>
+                            <li class="list-item-text">Utilized Google Maps API to provide geospatial awareness of incidents</li>
+                            <li class="list-item-text">Built a graffiti incident reporting form which allows city workers to publish findings to a SQLite database</li>
+                            <li class="list-item-text">Implemented multi-role login system utilizing Flask-Login for session management </li>
+                            <li class="list-item-text">Utilized Selenium WebDriver to exercise client and server logic across all endpoints</li>
+                        </ul>
+                        <div class="container">
+                            <ul class="list-inline mb-5">
+                                <li class="list-inline-item">
+                                    <a class="social-link text-center  rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" target="_blank" rel="noopener noreferrer" href="https://github.com/garyfish618/CHIP-8-Emulator">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">CHIP-8 Interpreter</div>
-                                    <p class="mb-0 ">An interpreter for the CHIP-8 programming language used to program a Telmac 1800 written in C++</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pong-chip8.png" alt="..." />
-                        </a>
+                    <div class="container">
+                        <h3>CHIP-8 Interpreter</h3>
+                        <h4 class="subheading">System Engineering/Emulation Project</h4>
+                        <h4 class="subheading">Skills Used: C++, Simple DirectMedia Layer (SDL)</h4>
+                        <ul>
+                            <li class="list-item-text">Created a CHIP-8 interpreter to virtualize games ran on the Telmac 1800 8-Bit Microcomputer</li>
+                            <li class="list-item-text">Formulated a system architecture to replicate CHIP-8 hardware (Registers, memory, opcode interpretation)</li>
+                            <li class="list-item-text">Utilized the Simple DirectMedia Layer (SDL) library to replicate sound, display and input</li>
+                            <li class="list-item-text">Designed a Debugging User Interface to display system level information to CHIP-8 game developers</li>
+                        </ul>
+                        <div class="container">
+                            <ul class="list-inline mb-5">
+                                <li class="list-inline-item">
+                                    <a class="social-link text-center  rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" target="_blank" rel="noopener noreferrer" href="https://github.com/garyfish618/DodgyBullet">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Dodgy Bullet</div>
-                                    <p class="mb-0 ">A 3D first-person shooter game created with Unity and C#</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/dodgy-bullet.png" alt="..." />
-                        </a>
+                    <div class="container">
+                        <h3>SIC-XE Simulator</h3>
+                        <h4 class="subheading">System Engineering/Emulation Project</h4>
+                        <h4 class="subheading">Skills Used: Python</h4>
+                        <ul>
+                            <li class="list-item-text">Led a team of four to formulate and produce a working line-by-line assembly language simulator</li>
+                            <li class="list-item-text">Organized and lead weekly scrum meetings to adhere to agile framework</li>
+                            <li class="list-item-text">Led design, implementation of interpreter architecture, & SIC/XE assembly instruction logic </li>
+                            <li class="list-item-text">Designed a Debugging User Interface to display system level information to CHIP-8 game developers</li>
+                        </ul>
+                        <div class="container">
+                            <ul class="list-inline mb-5">
+                                <li class="list-inline-item">
+                                    <a class="social-link text-center  rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" target="_blank" rel="noopener noreferrer" href="https://github.com/garyfish618/sic-xe-simulator">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">SIC/XE Simulator</div>
-                                    <p class="mb-0 ">A simulator and interpreter for the Simplified Instructional Computer written in Python</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/sicxe.png" alt="..." />
-                        </a>
+                    <div class="container">
+                        <h3>Dodgy Bullet</h3>
+                        <h4 class="subheading">3D First-Person-Shooter Game</h4>
+                        <h4 class="subheading">Skills Used: C# and Unity 3D</h4>
+                        <ul>
+                            <li class="list-item-text">Created a 3D game using the Unity game engine where the player must dodge objects and shoot robots</li>
+                            <li class="list-item-text">Developed complex game logic with attention to memory usage using C#</li>
+                        </ul>
+                        <div class="container">
+                            <ul class="list-inline mb-5">
+                                <li class="list-inline-item">
+                                    <a class="social-link text-center  rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="social-link text-center  rounded-circle text-white" href="#!"><i class="icon-link"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
-        <section class="content-section bg-primary text-white " id="Contact">
+        <!--Skills-->
+        <section class="content-section bg-light" id="skills">
+            <div class="content-section-heading text-center">
+                <h2 class="mb-5">Skills</h2>
+            </div>
+            <div class="container mb-5">
+                <h3>Primary Programming Languages</h3>
+                <ul class="list-inline">
+                    <li class="subheading list-inline-item me-4">Python</li>
+                    <li class="subheading list-inline-item me-4">Java</li>
+                    <li class="subheading list-inline-item me-4">JavaScript</li>
+                    <li class="subheading list-inline-item me-4">SQL</li>
+                </ul>
+            </div>
+            <div class="container mb-5">
+                <h3>Secondary Programming Languages</h3>
+                <ul class="list-inline">
+                    <li class="subheading list-inline-item me-4">C/C++</li>
+                    <li class="subheading list-inline-item me-4">C#</li>
+                </ul>
+            </div>
+            <div class="container mb-5">
+                <h3>Frameworks</h3>
+                <ul class="list-inline">
+                    <li class="subheading list-inline-item me-4">Flask</li>
+                    <li class="subheading list-inline-item me-4">React</li>
+                    <li class="subheading list-inline-item me-4">Redux</li>
+                    <li class="subheading list-inline-item me-4">SQLAlchemy</li>
+                    <li class="subheading list-inline-item me-4">WTForms</li>
+                    <li class="subheading list-inline-item me-4">Unity</li>
+                </ul>
+            </div>
+            <div class="container mb-5">
+                <h3>Databases</h3>
+                <ul class="list-inline">
+                    <li class="subheading list-inline-item me-4">SQLite</li>
+                    <li class="subheading list-inline-item me-4">PostgreSQL</li>
+                </ul>
+            </div>
+            <div class="container mb-5">
+                <h3>Tools</h3>
+                <ul class="list-inline">
+                    <li class="subheading list-inline-item me-4">Git</li>
+                    <li class="subheading list-inline-item me-4">Docker</li>
+                    <li class="subheading list-inline-item me-4">Visual Studio</li>
+                    <li class="subheading list-inline-item me-4">Visual Studio Code</li>
+                    <li class="subheading list-inline-item me-4">SSH Tools (Putty)</li>
+                    <li class="subheading list-inline-item me-4">Postman</li>
+                    <li class="subheading list-inline-item me-4">NPM</li>
+                    <li class="subheading list-inline-item me-4">Chrome Dev Tools</li>
+                </ul>
+            </div>
+            <div class="container mb-5">
+                <h3>Concepts</h3>
+                <ul class="list-inline">
+                    <li class="subheading list-inline-item me-4">Object Oriented Programming</li>
+                    <li class="subheading list-inline-item me-4">RESTful APIs</li>
+                    <li class="subheading list-inline-item me-4">Software Development Methodologies (Agile/Waterfall)</li>
+                    <li class="subheading list-inline-item me-4">Algorithm Analysis (Time/Space Complexity)</li>
+                    <li class="subheading list-inline-item me-4">Testing and Quality Assurance</li>
+                </ul>
+            </div>
+            <div class="container mb-5">
+                <h3>Skills</h3>
+                <ul class="list-inline">
+                    <li class="subheading list-inline-item me-4">Leadership</li>
+                    <li class="subheading list-inline-item me-4">Scrum-Master</li>
+                    <li class="subheading list-inline-item me-4">Creative Thinking</li>
+                    <li class="subheading list-inline-item me-4">Problem Analysis</li>
+                    <li class="subheading list-inline-item me-4">Team Collaboration</li>
+                </ul>
+            </div>
+        </section> 
+        <!--Contact-->
+        <section class="content-section bg-primary text-white " id="contact">
             <div class="container px-4 px-lg-5 mb-3">
                 <div class="content-section-heading">
                     <h2>Contact Me</h2>
